@@ -14,7 +14,7 @@ set(CMAKE_CXX_STANDARD 17)
 # The top-level CMakeLists.txt file for a project must contain a literal, direct call to the
 # `project()` command. `project()` sets up some helpful variables that describe source/binary
 # directories, and the current project version. This is a standard CMake command.
-project(Drops VERSION 0.0.1)
+project(Drops VERSION 1.0.0)
 
 # If you've installed JUCE somehow (via a package manager, or directly using the CMake install
 # target), you'll need to tell this project that it depends on the installed copy of JUCE. If you've
@@ -41,7 +41,7 @@ juce_add_plugin(Drops
     # VERSION ...                               # Set this if the plugin version is different to the project version
     # ICON_BIG ...                              # ICON_* arguments specify a path to an image file to use as an icon for the Standalone
     # ICON_SMALL ...
-    # COMPANY_NAME ...                          # Specify the name of the plugin's author
+    COMPANY_NAME NATURAL_SYNTH # Specify the name of the plugin's author
     IS_SYNTH TRUE # Is this a synth or an effect?
 
     # NEEDS_MIDI_INPUT TRUE/FALSE               # Does the plugin need midi input?
