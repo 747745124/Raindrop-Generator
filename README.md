@@ -7,7 +7,7 @@ This is a Raindrop sound generator based on the paper from DAFx conference.
 
 * The rain drops was modelled as 2 different stages, rain drops on hard surface and wet-surface. And a single drop last around 10-20 ms. The exact model was given in the paper above.
 
-  <img src="/Users/naoyuki/Library/Mobile%20Documents/com~apple~CloudDocs/%E4%B8%93%E4%B8%9A%E8%AF%BE/Master%27s/240B/Project/assets/image-20230323205706505.png" alt="image-20230323205706505" style="zoom:33%;" />
+  <img src="./assets/image-20230323205706505.png" alt="image-20230323205706505" style="zoom:33%;" />
 
   Since no analytical solution resolution were given for the wet-surface model, I approximated the waveform with `exp(-t)sin(t)` function.
 
